@@ -47,6 +47,13 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
 	apt-mark manual $savedAptMark; \
 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;
 
+RUN set -eux; \
+	git clone --depth 1 https://github.com/devkitPro/libctru.git; \
+	cd libctru/libctru; \
+	make -j4 && make install; \
+	cd ../..; \
+	rm -rf libctru;
+
 COPY --from=armips-builder /armips/build/armips /usr/local/bin/armips
 
 USER builder

@@ -10,6 +10,7 @@ This includes:
 * firmtool - used by most FIRMs like Luma3DS and GodMode9
 * armips - used by GodMode9
 * p7zip - used by GodMode9 to build release zips
+* libctru (newer commits) - used by Luma3DS, which usually needs a newer libctru than the latest release
 
 ## Build
 
