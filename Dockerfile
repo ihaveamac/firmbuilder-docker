@@ -32,7 +32,7 @@ RUN set -eux; \
 ################################################
 FROM builder-base
 
-ENV HOME /home/builder
+ENV HOME=/home/builder
 RUN useradd -m -d $HOME -s /bin/bash -u 1000 builder
 
 RUN set -eux; \
