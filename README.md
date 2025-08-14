@@ -2,7 +2,7 @@
 
 A custom Docker image used to build Nintendo 3DS FIRM images. Based on the [devkitpro/devkitarm](https://hub.docker.com/r/devkitpro/devkitarm) image.
 
-* GitHub repo: [ihaveamac/firmbuilder-docker](https://github.com/ihaveamac/firmbuilder-docker)
+* Repository: [codeberg.org/ihaveahax/firmbuilder-docker](https://codeberg.org/ihaveahax/firmbuilder-docker)
 * Docker Hub: [ianburgwin/firmbuilder](https://hub.docker.com/r/ianburgwin/firmbuilder)
 
 This includes:
